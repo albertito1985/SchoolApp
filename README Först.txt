@@ -1,5 +1,9 @@
-There is no way to deploy a Node server in Webshare so the only way to see the webpage is by running it localy. I don't have much experience with this,
-and the only way I can do it is in VS code. so here it goes
+To run the code...
+
+IMPORTANT!!
+Get an GOOGLE MAPS API KEY and send it as the googleMapsApiKey prop from the LoadScript component inside the Map component in the components map.
+without it you will not be able to see the webpage.
+You need as well to write on the third get request in the app.js file inside the cors-server folder (obs. NOT IN THE SRC FOLDER).
 
 (You may already know this or you may have another way to do it, but in any case....)
 - Install Nodejs latest version if you don't have it.
