@@ -13,7 +13,7 @@ app.get('/schoolRequest/:id', (req, res) => {
 })
 
 app.get('/geoCoding/:adress', (req, res) => {
-    res.redirect(`https://maps.googleapis.com/maps/api/geocode/json?address=${req.params.adress}&key=AIzaSyDioBnws44nU0R32P7ruqT1lhk9rwo7LQc`);
+    res.redirect(`https://maps.googleapis.com/maps/api/geocode/json?address=${req.params.adress}&key=`);
 })
 
 app.get('/StatisticsRequest/:id', (req, res) => {
