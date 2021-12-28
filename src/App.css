@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding:0;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+};
+
+body,html{
+ height:100%;
+}
+
+#App{
+  width:100%;
+  height:100%;
+  background-image: url('./images/abc-g926cb19b2_12802.jpg');
+}
+
+#App-header {
+  background-color: black;
+  color: white;
+  padding:20px;
+}
+
+#contentWrapper{
+  /* min-height:calc(100vh - 130px); */
+  min-height:calc(100vh - 85px);
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content{
+  background-color: rgba(128, 128, 128,0.7);
+  height:100%;
+  margin:20px;
+  padding:40px;
+  display:flex;
+  justify-content: space-between;
+}
+
+/*search component*/
+#search{
+  color:black;
+  background-color: white;
+  padding:20px;
+}
+
+#welcomeSearch{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+#search div form{
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding:20px; */
+}
+
+#search form input{
+  box-sizing:border-box;
+  padding:5px;
+  border:none;
+  border-bottom:2px solid black;
+}
+
+#search form input.error {
+  border:none;
+  border-bottom:2px solid red;
+}
+
+#search form input:focus {
+  outline: none;
+}
+
+#search div{
+  width:100%;
+}
+
+#search div * {
+  width:100%;
+}
+
+#search #submit{
+  height: 30px;
+  background-color:rgb(118, 192, 235);
+  border:none;
+  font-weight: bold;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+#search #submit:hover{
+  border:2px solid black;
+}
+
+#search label{
+  font-weight:bold;
+}
+
+#search .errorMessage{
+  color: red;
+}
+
+/*SchoolInfo component*/
+
+
+#info{
+  padding:20px;
+  color:white;
+  width:45%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+}
+
+
+#info.welcome{
+  background-image: url('./images/education-g24c946eae_1920.jpg');
+  background-size: cover;
+}
+
+#info.active{
+  background-color:black;
+}
+
+#schoolInfo h1{
+  margin-bottom: 20px;
+}
+
+#schoolInfo h2{
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#infoTable{
+  background-color:white;
+  color:black;
+  text-align: left;
+  border-spacing: 20px;;
+}
+
+#info h2{
+  margin-top:20px;
+}
+
+/*stats*/
+#info h3{
+  text-align:left;
+  margin-top:20px;
+  color:rgb(118, 192, 235);
+
+}
+
+.statsTable{
+  width:100%;
+}
+
+.statsTable tbody tr:first-child{
+  color:gray;
+}
+
+.statsTable tr *:nth-last-child(2),.statsTable tr *:nth-last-child(3){
+  width:25%;
+}
+
+.statsTable tr *:first-child{
+  text-align:left;
+  width:50%;
+}
+
+/*List*/
+
+#lista{
+  width:100%;
+  /* padding:20px 0; */
+}
+
+#lista ul{
+  list-style:none;
+  width:100%;
+}
+
+#lista #listaUl{
+  margin-top:20px;
+}
+
+#lista ul li {
+  margin-top:5px;
+  background-color:white;
+  color:black;
+  padding: 5px;
+  border-radius:20px;
+  text-align: center;
+  width:100%;
+}
+
+#lista ul li:hover {
+  background-color:grey;
+}
+
+#lista ul li.selected:hover {
+  background-color:rgb(118, 192, 235);;
+}
+
+#controlls{
+  background-color:black;
+  color:white;
+  padding:20px;
+  width:20%;
+  display:flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items:center;
+}
+
+#controlls .selected{
+  background-color:rgb(118, 192, 235);
+}
+
+#pageBrowser{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  margin-top:20px;
+}
+
+#pageBrowser .pageBrowserLi{
+  margin-right:10px;
+  padding:10px;
+}
+
+#pageBrowser li.pageLabel{
+  background-color:black;
+  color: white;
+  margin-right:10px;
+}
+
+#welcome{
+  width: 100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
